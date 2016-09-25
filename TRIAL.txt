@@ -1,0 +1,116 @@
+MAIN:
+this is just a simple tool for creating readme.md files for a particular project in python.
+this is supposed to get all the docs associated with a file and then create a file name
+readme.md from it and then that's it.
+
+So, here is the main thing to sort out the morrow.
+be able to get the rest of the methods away from the globals thingy if they are redundant.
+then able to collect the real ones.
+
+get the instance type correct and the is subclass too right.
+and then learn to shift through class properties and methods and the get all the docs on them too.
+and then the main or whatever is left of it or whatever.
+
+ignore all the imports and all that variables exposed through importations
+
+use the issubclass thingy to check if the values in the __all__ is a class or a function.
+if it is just a function, then we do nothing more that just get the __doc__ of the function.
+But if it is a class, then we get the __doc__ and the other methods or classes in the class that are
+explicitly defined in the class but other inheritances are ignored and the __doc__ reps of those functions
+and or classes are also obtained.
+
+
+CLASS : Notes
+        so this is the main class that implements all the methods of the notes thingy.
+        this is supposed to be rather simple, succinct and concise.
+    
+	METHOD: 	__init__
+	__doc__: No documentation for the this METHOD
+
+	METHOD: 	__iadd__
+	__doc__: No documentation for the this METHOD
+
+	METHOD: 	__func_exec
+	__doc__: 
+        this will return the name and the docstring of the function as a single string.
+        :param function: the name of the function
+        :return: name + docstring of the function as a single string.
+        
+
+	METHOD: 	__eval__
+	__doc__: 
+        this is to check if the api is available in this current module
+        :param api: the api to check for
+        :return: return the mem rep for the api from globals
+        
+
+	METHOD: 	file
+	__doc__: 
+        this should return a file rep for the whole module.
+        every single line in the code.
+        :return:
+        
+
+	METHOD: 	__run
+	__doc__: 
+        so this run for all the objects in the api's list argument provided.
+        :return: None
+        
+
+	METHOD: 	__test_type
+	__doc__: 
+        to check for the matching type. class will match a class and then function will match a function
+        :param other: an object.
+        :return: True or False
+        
+
+	METHOD: 	__class_exec
+	__doc__: 
+        this will return the name of the function and all other methods it contains and the docstrings
+        of the functions and the class itself including any other other classes contained within this
+        class.
+        :param _class: the class to be passed around and extracted from.
+        :return:
+        
+
+	METHOD: 	save
+	__doc__: 
+        if you want to save the content of the docs to a file
+        :param name: then pass the name as the parameter of the file you wanna save else I am using readme.txt
+        :return:
+        
+
+	METHOD: 	__call__
+	__doc__: 
+        I am not saying that this is asynchronous programming, but callback should definitely be passed
+        for use with the docs.
+        :callback: a callback function to be executed
+        :return:
+        
+
+	CLASS : Notes.Danny
+        who is going to stop me now
+        
+		METHOD: 	__init__
+		__doc__: 
+            oooooooooooh my God.
+            
+
+		CLASS : Notes.Danny.Me
+            Is this the fault of the squabble in the code
+            
+			METHOD: 	__init__
+			__doc__: 
+                another small crazy trial
+                
+
+			METHOD: 	__str__
+			__doc__: 
+                an str rep of the name of the user.
+                :return:
+                
+
+FUNCTION : 	pprint
+__doc__: Pretty-print a Python object to a stream [default is sys.stdout].
+
+Owner: Danny Mcwaves
